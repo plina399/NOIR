@@ -1,0 +1,231 @@
+<! DOCTYPE html>
+<html lang="ru">
+  <head>
+ <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width, initial-
+      scale-1.0">
+      <title>NOIR - Online Shop</title>title>
+    <link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+      <link href="https://
+        fonts.goodleapis.com/css2?
+        family=Inter:wght@400;600;900&dipsplay=swap" rel="stylesheet">
+        <style>
+          * { margin: 0; padding: 0; box-sizing: border-box; font-family:
+            'Inter', sans-serif; }
+          body { background-color: #E8E8E8; color: #111; overflow-x: hidden;]
+                header { display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; border-bottom: 1px solid #111; font-size: 14px; text-transform: uppercase; }
+    .nav-links { display: flex; gap: 20px; }
+    .nav-links a { text-decoration: none; color: #111; font-weight: 600; }
+    .logo { font-size: 24px; font-weight: 900; letter-spacing: -1px; }
+    .icons { display: flex; gap: 20px; font-weight: 600; cursor: pointer; }
+
+    .hero { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid #111; }
+    .hero-left { position: relative; aspect-ratio: 1/1; background: url('https://images.unsplash.com/photo-1550614000-4b95d466f46b?q=80&w=1000&auto=format&fit=crop') center/cover; border-right: 1px solid #111; }
+    .hero-text { position: absolute; bottom: 30px; left: 30px; background: #E8E8E8; padding: 20px; max-width: 300px; }
+    .hero-text h1 { font-size: 32px; font-weight: 600; line-height: 1.1; margin-bottom: 15px; letter-spacing: -1px; }
+    .btn { display: inline-block; background: #111; color: #fff; padding: 10px 20px; text-decoration: none; font-size: 12px; text-transform: uppercase; font-weight: 600; }
+                лина бамтори:
+header { display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; border-bottom: 1px solid #111; font-size: 14px; text-transform: uppercase; }
+    .nav-links { display: flex; gap: 20px; }
+    .nav-links a { text-decoration: none; color: #111; font-weight: 600; }
+    .logo { font-size: 24px; font-weight: 900; letter-spacing: -1px; }
+    .icons { display: flex; gap: 20px; font-weight: 600; cursor: pointer; }
+
+    .hero { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid #111; }
+    .hero-left { position: relative; aspect-ratio: 1/1; background: url('https://images.unsplash.com/photo-1550614000-4b95d466f46b?q=80&w=1000&auto=format&fit=crop') center/cover; border-right: 1px solid #111; }
+    .hero-text { position: absolute; bottom: 30px; left: 30px; background: #E8E8E8; padding: 20px; max-width: 300px; }
+    .hero-text h1 { font-size: 32px; font-weight: 600; line-height: 1.1; margin-bottom: 15px; letter-spacing: -1px; }
+    .btn { display: inline-block; background: #111; color: #fff; padding: 10px 20px; text-decoration: none; font-size: 12px; text-transform: uppercase; font-weight: 600; }
+    
+    .hero-right { position: relative; aspect-ratio: 1/1; background: url('https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=1000&auto=format&fit=crop') center/cover; }
+    .vertical-text { position: absolute; top: 0; right: 0; background: #111; color: #fff; writing-mode: vertical-rl; padding: 30px 10px; font-size: 14px; letter-spacing: 2px; text-transform: uppercase; height: 100%; display: flex; justify-content: space-between; }
+
+    .collection { padding: 40px 30px; border-bottom: 1px solid #111; }
+    .collection-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px; }
+    .collection h2 { font-size: 15vw; font-weight: 900; line-height: 0.75; letter-spacing: -5px; text-transform: uppercase; margin-left: -10px; }
+    .collection-header a { text-decoration: none; color: #111; font-size: 14px; border-bottom: 1px solid #111; padding-bottom: 2px; }
+
+    .products { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: #111; border: 1px solid #111; }
+    .product-card { background: #E8E8E8; padding: 20px; display: flex; flex-direction: column; }
+    .product-card img { width: 100%; aspect-ratio: 3/4; object-fit: cover; margin-bottom: 15px; filter: grayscale(100%); transition: 0.3s; }
+    .product-card:hover img { filter: grayscale(0%); }
+    .product-info { display: flex; justify-content: space-between; font-size: 12px; font-weight: 600; }
+    .color-squares { display: flex; gap: 5px; margin-top: 10px; }
+    .sq { width: 10px; height: 10px; border: 1px solid #111; background: #111; }
+    .sq.grey { background: #888; }
+
+    .split-banner { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid #111; }
+    .banner-left { aspect-ratio: 1/1; background: url('https://images.unsplash.com/photo-1608256246200-53e635b5b65f?q=80&w=1000&auto=format&fit=crop') center/cover; border-right: 1px solid #111; }
+    .banner-right { aspect-ratio: 1/1; background: url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1000&auto=format&fit=crop') center/cover; position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+    .banner-menu { color: #fff; font-size: 24px; font-weight: 600; line-height: 1.5; text-align: center; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+    .banner-menu span { display: block; cursor: pointer; transition: 0.2s; }
+    .banner-menu span:hover { color: #ccc; }
+
+    .newsletter { background: #111; color: #fff; padding: 40px 30px; display: flex; justify-content: space-between; align-items: center; }
+    .newsletter h3 { font-size: 32px; font-weight: 600; line-height: 1.1; max-width: 400px; letter-spacing: -1px; }
+    .newsletter-form { display: flex; flex-direction: column; gap: 10px; width: 300px; }
+    .input-group { display: flex; border-bottom: 1px solid #fff; padding-bottom: 5px; justify-content: space-between; }
+    .
+
+лина бамтори:
+input-group input { background: transparent; border: none; color: #fff; outline: none; width: 100%; font-size: 14px; }
+    .input-group button { background: transparent; border: none; color: #fff; cursor: pointer; font-size: 18px; }
+    .checkbox { font-size: 10px; color: #888; display: flex; align-items: center; gap: 5px; }
+
+    footer { padding: 40px 30px 20px; overflow: hidden; }
+    .footer-title { font-size: 15vw; font-weight: 900; line-height: 0.75; letter-spacing: -5px; text-transform: uppercase; margin-bottom: 40px; white-space: nowrap; margin-left: -10px; }
+    .footer-links { display: flex; justify-content: space-between; font-size: 12px; font-weight: 600; margin-bottom: 20px; }
+    .footer-links ul { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+    .footer-links a { text-decoration: none; color: #111; }
+    .copyright { text-align: center; font-size: 10px; color: #888; border-top: 1px solid #ccc; padding-top: 20px; }
+
+    @media (max-width: 768px) {
+        header { flex-direction: column; gap: 15px; padding: 15px; }
+        .hero { grid-template-columns: 1fr; }
+        .hero-right { display: none; }
+        .collection h2 { font-size: 25vw; letter-spacing: -2px; }
+        .products { grid-template-columns: 1fr 1fr; }
+        .split-banner { grid-template-columns: 1fr; }
+        .banner-left { border-right: none; border-bottom: 1px solid #111; }
+        .newsletter { flex-direction: column; align-items: flex-start; gap: 20px; }
+        .newsletter-form { width: 100%; }
+        .footer-title { font-size: 20vw; }
+        .footer-links { flex-direction: column; gap: 20px; }
+    }
+</style>
+<header>
+    <div class="nav-links">
+        <a href="#">Male</a>
+        <a href="#">Female</a>
+        <a href="#">Blog</a>
+        <a href="#">Contacts</a>
+    </div>
+    <div class="logo">NOIR</div>
+    <div class="icons">
+        <span>Search</span>
+        <span>Account</span>
+        <span>Cart</span>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-left">
+        <div class="hero-text">
+            <h1>Your modern style starts here</h1>
+            <a href="#" class="btn">Shop All</a>
+        </div>
+    </div>
+    <div class="hero-right">
+        <div class="vertical-text">
+            <span>Spring26</span>
+            <span>New</span>
+        </div>
+    </div>
+</section>
+
+<section class="collection">
+    <div class="collection-header">
+        <h2>H-OUT</h2>
+        <div>
+            <span style="font-size: 12px; margin-right: 20px;">New collection</span>
+            <a href="#">Shop</a>
+        </div>
+    </div>
+    
+    <div class="products">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?q=80&w=500&auto=format&fit=crop" alt="Jacket">
+            <div class="product-info"><span>Black Jacket 89.6</span><span>$405</span></div>
+            <div class="color-squares"><div class="sq"></div></div>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?q=80&w=500&auto=format&fit=crop" alt="Jeans">
+            <div class="product-info"><span>Jeans 008.1</span><span>$165</span></div>
+            <div class="color-squares"><div class="sq grey"></div></div>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?q=80&w=500&auto=format&fit=crop" alt="Trousers">
+            <div class="product-info"><span>Trousers 89.b</span><span>$245</span></div>
+            <div class="color-squares"><div class="sq"></div></div>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=500&auto=format&fit=crop" alt="Windbreaker">
+            <div class="product-info"><span>Grey Windbreaker</span><span>$255</span></div>
+            <div class="color-squares"><div class="sq grey"></div></div>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.
+
+лина бамтори:
+com/photo-1591047139829-d91aecb6caea?q=80&w=500&auto=format&fit=crop" alt="Jacket">
+            <div class="product-info"><span>Fur Jacket 98.11</span><span>$605</span></div>
+            <div class="color-squares"><div class="sq"></div></div>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=500&auto=format&fit=crop" alt="Jeans">
+            <div class="product-info"><span>Jeans 60-B</span><span>$205</span></div>
+            <div class="color-squares"><div class="sq grey"></div></div>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=500&auto=format&fit=crop" alt="Boots">
+            <div class="product-info"><span>BJ Boots 80.8</span><span>$705</span></div>
+            <div class="color-squares"><div class="sq"></div></div>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1583496661160-fb5886a13d27?q=80&w=500&auto=format&fit=crop" alt="Skirt">
+            <div class="product-info"><span>Skirt sk1</span><span>$205</span></div>
+            <div class="color-squares"><div class="sq"></div></div>
+        </div>
+    </div>
+</section>
+
+<section class="split-banner">
+    <div class="banner-left"></div>
+    <div class="banner-right">
+        <div class="banner-menu">
+            <span>Male</span>
+            <span>New In</span>
+            <span>Clothing</span>
+            <span>Shoes</span>
+            <span>Accessories</span>
+        </div>
+    </div>
+</section>
+
+<section class="newsletter">
+    <h3>Subscribe to our fashion news and deals</h3>
+    <div class="newsletter-form">
+        <div class="input-group">
+            <input type="email" placeholder="E-mail">
+            <button>↗</button>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="agree">
+            <label for="agree">I agree to the processing of my personal data</label>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-title">Online-shop</div>
+    <div class="footer-links">
+        <ul>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Facebook</a></li>
+        </ul>
+    </div>
+    <div class="copyright">
+        © 2026 NOIR. All Rights Reserved.
+    </div>
+</footer>
